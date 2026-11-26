@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Documato.Application/Documato.Application.csproj" />
+    <Project Path="src/Documato.Domain/Documato.Domain.csproj" />
+    <Project Path="src/Documato.Infrastructure/Documato.Infrastructure.csproj" />
+    <Project Path="src/Documato.Web/Documato.Web.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,13 @@
+.git
+.vs
+.vscode
+.agents
+.codex
+**/bin
+**/obj
+**/.env
+**/.env.*
+**/*.user
+**/*.suo
+.nuget-packages
+TestResults

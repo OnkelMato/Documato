@@ -1,4 +1,20 @@
 services:
+  web:
+    build:
+      context: .
+      dockerfile: src/Documato.Web/Dockerfile
+    image: documato-web:local
+    container_name: documato-web
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mssql
+      - chromadb
+    restart: unless-stopped
+
   mssql:
     image: mcr.microsoft.com/mssql/azure-sql-db-server:latest
     platform: linux/arm64

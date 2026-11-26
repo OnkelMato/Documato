@@ -1,0 +1,6 @@
+@Documato.Web_HostAddress = http://localhost:0
+
+GET {{Documato.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
